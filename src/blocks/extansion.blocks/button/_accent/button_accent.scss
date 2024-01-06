@@ -1,0 +1,67 @@
+.button_accent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 219px;
+    height: 47px;
+
+    background-color: $color-acent;
+    color: $color-text-light;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.2s ease-in-out;
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background-color: $color-epsilon;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.1s ease-in-out;
+    }
+    
+    &:focus {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.2s ease-in-out;
+        transition: all 0.3s ease;
+    }
+}
+
+// ---  adaptive ---
+
+// //desctop
+
+// @media (max-width: 1440px) {
+// }
+// @media (max-width: 1270px) {
+// }
+// @media (max-width: 1024px) {
+// }
+
+// //tablet
+
+@media (max-width: 992px) {
+    .button_accent {
+        width: 100%;
+    }
+}
+// @media (max-width: 768px) {
+// }
+
+// //phones
+
+// @media (max-width: 425px) {
+// }
+// @media (max-width: 375px) {
+// }
+// @media (max-width: 320px) {
+//}
+
+// ---  /adaptive ---

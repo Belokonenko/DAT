@@ -1,0 +1,16 @@
+
+.button_theme_light {
+    border-color: $color-text-light;
+
+    &:hover {
+        background-color: $color-text-light;
+    }
+    
+    .button-round__img {
+        fill: $color-text-light;
+    }
+    
+    &:hover .button-round__img {
+        fill: $color-main;
+    }
+}

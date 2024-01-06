@@ -1,0 +1,330 @@
+<main>
+    <div class="wrap-catalog container">
+        <!-- pagination -->
+        <ul class="list pagination container">
+            <li class="pagination__item">
+                <a class="ref pagination__ref" href="index.html">home</a>
+            </li>
+            <li class="pagination__item">
+                <a class="ref pagination__ref">catalog</a>
+            </li>
+            <li class="pagination__item">
+                <a class="ref pagination__ref pagination__ref--active" href="#"
+                    >plant protection</a
+                >
+            </li>
+        </ul>
+        <!--/ pagination -->
+
+        <!-- catalog title -->
+        <h1 class="container catalog__title catalog__title-2 title title-two">
+            Plant protection
+        </h1>
+
+        <!-- block num and sort -->
+
+        <div class="wrap-num-btn-sort">
+            <!-- show prod num -->
+            <p class="counter-prod">
+                <span class="counter-prod__num">621</span> products are shown
+            </p>
+            <!-- /show prod num -->
+
+            <div class="wrap-box-sort">
+                <!-- button filter mob version -->
+                <button class="filter-btn-mob btn-dat" hidden>Filter</button>
+                <!-- button filter mob version -->
+
+                <!-- sort btn -->
+                <div class="sort-by">
+                    <label for="sort-options">Sort by:</label>
+                    <select id="sort-options">
+                        <option value="default">Default</option>
+                        <option value="price-low-to-high">
+                            Price: Low to High
+                        </option>
+                        <option value="price-high-to-low">
+                            Price: High to Low
+                        </option>
+                        <option value="popularity">Popularity</option>
+                        <!-- Другие опции для сортировки -->
+                    </select>
+                </div>
+
+                <hr />
+                <!-- <svg class="sort__svg" viewBox="0 0 12 12"> -->
+                <!--     <use xlink:href="./img/icon/sprite.svg#arr"></use> -->
+                <!-- </svg> -->
+
+                <!-- /sort  btn-->
+            </div>
+        </div>
+        <!-- /block num and sort -->
+
+        <!-- catalog-prod-2 -->
+        <div class="wrap-fliter-grid">
+            <!-- filters -->
+            <section class="wrap-categories-filter">
+                <!--tab categories -->
+
+                <table class="categories">
+                    <!--tab strings -->
+                    <tr>
+                        <td>Herbicides</td>
+                        <td>(<span>22</span>)</td>
+                    </tr>
+                    <tr>
+                        <td>Fungicides</td>
+                        <td>(<span>7</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Fungicides</td>
+                        <td>(<span>1</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Insecticides</td>
+                        <td>(<span>111</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Desiccants</td>
+                        <td>(<span>10</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Stain removers</td>
+                        <td>(<span>111</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Adjuvants</td>
+                        <td>(<span>0</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Rodenticides</td>
+                        <td>(<span>333</span>)</td>
+                    </tr>
+
+                    <tr class="categories__line">
+                        <td>Retardants</td>
+                        <td>(<span>0</span>)</td>
+                    </tr>
+                    <!--/tab strings -->
+                </table>
+                <!-- tab categories -->
+
+                <form class="filter">
+                    <button
+                        type="button"
+                        class="filter__btn"
+                        aria-hidden="true"
+                    >
+                        Filter
+                    </button>
+
+                    <fieldset class="fieldset">
+                        <legend class="visually-hidden">Manufacturer</legend>
+                        <p class="filter__title-manufacturer">Manufacturer</p>
+                        <ul class="filter__manufacturer">
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"nertus", "text": "Nertus" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"basf", "text": "Basf" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"adam ukraine", "text": "Adam Ukraine" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"bayer", "text": "Bayer" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"gzd", "text": "GZD" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"stefes", "text": "Stefes" })
+                            <!-- -- -->
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend class="visually-hidden">Culture</legend>
+
+                        <p class="filter__title-culture">Culture</p>
+                        <ul class="filter__culture">
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"sunflower", "text": "Sunflower" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"corn", "text": "Corn" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"Wheat", "text": "Wheat" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"Barley", "text": "Barley" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"Turnip", "text": "Turnip" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"soy", "text": "Soy" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"Pea", "text": "Pea" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"beans", "text": "Beans" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"mustard", "text": "Mustard" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"peas", "text": "Peas" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"rye", "text": "Rye" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"bean", "text": "Bean " })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"clover", "text": "Clover" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"Kostrets/Kostrytsia", "text":
+                            "Kostrets/Kostrytsia" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"Alfalfa", "text": "Alfalfa" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"timothy", "text": "Timothy" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"triticale", "text": "Triticale" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"sugar-beet", "text": "Sugar beet" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"fodder-beet", "text": "Fodder beet" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"other", "text": "Other " })
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend class="visually-hidden">quantity</legend>
+                        <p>Quantity</p>
+                        <ul>
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"1", "text": "1" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"2", "text": "2" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"3", "text": "3" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"4", "text": "4" })
+                            <!-- -- -->
+                            @@include(
+                            '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
+                            { "name":"5", "text": "5" })
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <!-- wrap categories and  filters -->
+
+            <section class="catalog-prod">
+                <!-- list card product -->
+                <ul class="list catalog-prod__list">
+                    @@for (var i = 0; i < 15; i++) {
+                    <li>
+                        @@include('../../extansion.blocks/card-prod/card-prod.html', {
+                        "path_img" : "./img/petunia.jpg", "alt" : "petunia",
+                        "name": "Petunia Sofistika F1 0", "state" :"instock" ,
+                        "price" : "4", "unit" : "1", } )
+                    </li>
+
+                    }
+                </ul>
+                <!-- /list card product -->
+
+                <!-- pagination-page -->
+                <!-- @@include('../../../lib/extansion/pagination/pagination-page/pagination-page.html') -->
+                <!-- /pagination-page -->
+            </section>
+        </div>
+        <!-- / catalog-prod-2  --->
+    </div>
+    <!-- /wrap-catalog -->
+
+    <!-- <section class="description desc__catalog-2"> -->
+    <!--     <div class="description__text-wrap container"> -->
+    <!--         <h1 class="title description__title">Plant protection</h1> -->
+
+    <!--         <p> -->
+    <!--             Means of plant protection are divided into four main types: -->
+    <!--             mechanical, chemical, biological and agrotechnical. However, the -->
+    <!--             most rational thing is their simultaneous, correct combination. -->
+    <!--             The most common method is chemical. There are thousands of -->
+    <!--             different types of chemical protection products. But they should -->
+    <!--             not be confused, let alone combined with chemical fertilizers. -->
+    <!--             The methods of their influence on plants are completely -->
+    <!--             opposite. -->
+    <!--         </p> -->
+
+    <!--         <p> -->
+    <!--             It is necessary to know and distinguish chemical means of plant -->
+    <!--             protection. After all, these drugs have a strictly defined -->
+    <!--             object of influence (the causative agent of the disease, insect -->
+    <!--             pests, a species or family of weeds). -->
+    <!--         </p> -->
+
+    <!--         <p> -->
+    <!--             Poisonous chemicals do not tolerate negligence. This is the type -->
+    <!--             of drug that is not enough to simply dilute in water and spray -->
+    <!--             plants with it. If pesticides are used incorrectly, they can -->
+    <!--             harm you, the beneficial insects, and the crop. -->
+    <!--         </p> -->
+    <!--     </div> -->
+    <!-- </section> -->
+</main>

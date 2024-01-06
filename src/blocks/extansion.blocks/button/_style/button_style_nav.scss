@@ -1,0 +1,13 @@
+.button_style_nav {
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #1e6140;
+    transition: all .3s ease;
+}
+
+.button_style_nav:hover {
+    background-color: $color-acent;
+    border-color: $color-acent;
+}
+

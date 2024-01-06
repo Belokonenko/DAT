@@ -1,0 +1,44 @@
+.title_leaf-r {
+    &::after {
+        display: inline-block;
+        content: url('../images/leaf-2.svg');
+        height: 32px;
+        width: 25px;
+        margin-left: 10px;
+    }
+}
+
+// ---  adaptive ---
+
+//desctop
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1270px) {
+}
+@media (max-width: 1024px) {
+}
+
+//tablet
+
+@media (max-width: 992px) {
+    .title_leaf-r {
+        &::after {
+            height: 16px;
+            width: 13px;
+        }
+    }
+}
+@media (max-width: 768px) {
+}
+
+//phones
+
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+}
+
+// ---  /adaptive ---
