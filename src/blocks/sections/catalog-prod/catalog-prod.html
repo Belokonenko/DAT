@@ -1,15 +1,17 @@
-<main>
+<main class="catalog-prod">
     <div class="wrap-catalog container">
         <!-- pagination -->
         <ul class="list pagination container">
             <li class="pagination__item">
-                <a class="ref pagination__ref" href="index.html">home</a>
+                <a class="button pagination__ref" href="index.html">home</a>
             </li>
             <li class="pagination__item">
-                <a class="ref pagination__ref">catalog</a>
+                <a class="button pagination__ref">catalog</a>
             </li>
             <li class="pagination__item">
-                <a class="ref pagination__ref pagination__ref--active" href="#"
+                <a
+                    class="button pagination__ref pagination__ref_active"
+                    href="#"
                     >plant protection</a
                 >
             </li>
@@ -17,7 +19,9 @@
         <!--/ pagination -->
 
         <!-- catalog title -->
-        <h1 class="container catalog__title catalog__title-2 title title-two">
+        <h1
+            class="title title_leaf-l title_size_l title_leaf-r partners__title"
+        >
             Plant protection
         </h1>
 
@@ -278,10 +282,10 @@
                 <ul class="list catalog-prod__list">
                     @@for (var i = 0; i < 15; i++) {
                     <li>
-                        @@include('../../extansion.blocks/card-prod/card-prod.html', {
-                        "path_img" : "./img/petunia.jpg", "alt" : "petunia",
-                        "name": "Petunia Sofistika F1 0", "state" :"instock" ,
-                        "price" : "4", "unit" : "1", } )
+                        @@include('../../extansion.blocks/card-prod/card-prod.html',
+                        { "path_img" : "../../../images/petunia.jpg", "alt" :
+                        "petunia", "name": "Petunia Sofistika F1 0", "state"
+                        :"instock" , "price" : "4", "unit" : "1", } )
                     </li>
 
                     }
@@ -297,7 +301,7 @@
     </div>
     <!-- /wrap-catalog -->
 
-    <!-- <section class="description desc__catalog-2"> -->
+    <!-- <section class="description desc__catalog-prod"> -->
     <!--     <div class="description__text-wrap container"> -->
     <!--         <h1 class="title description__title">Plant protection</h1> -->
 

@@ -1,4 +1,3 @@
-$pag-item-mar-r: 30px;
 .content-prod {
     padding-top: 250px;
 }
@@ -12,44 +11,10 @@ $pag-item-mar-r: 30px;
     transform: translateX(50%);
 
 }
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-    overflow: hidden;
-
-    &__item:not(:last-child) {
-        position: relative;
-        margin-right: $pag-item-mar-r;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: calc(($pag-item-mar-r / 2) * -1);
-            transform: translate(50%, -50%);
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: $color-main-light;
-        }
-    }
-
-    &__ref {
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.15rem;
-        font-weight: 400;
-
-        &--active {
-            font-weight: 700;
-        }
-    }
-}
 
 //--- catalog ---
 //
 
-$panel-h: 25%;
 
 .catalog {
     display: block;
