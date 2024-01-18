@@ -6,8 +6,9 @@ $indentation: 35px;
     
     margin: 0 auto;
     padding: 0 $indentation;
-
+    box-sizing: content-box;
     overflow: hidden;
+
 
     // desctop
     @media (max-width: 1440px) {

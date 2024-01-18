@@ -1,3 +1,8 @@
 .catalog-prod {
     padding-top: calc($header-min-height);
 }
+
+.catalog-prod__title {
+        text-align: center;
+        margin: 10px 0 0 0;
+}
