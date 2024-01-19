@@ -1,9 +1,52 @@
 .catalog-prod {
+    position: relative;
     padding-top: calc($header-min-height);
 }
+.catalog-prod__dec-ell:nth-of-type(1) {
+    top: 3%;
+    transform: translateX(-50%);
+
+}
+.catalog-prod__dec-ell:nth-of-type(2) {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -30%);
+
+}
+
+.catalog-prod__dec-ell:nth-of-type(3) {
+    top: 40%;
+    transform: translateX(-50%);
+
+}
+
+.catalog-prod__dec-ell:nth-of-type(4) {
+    right: 0;
+    top: 40%;
+    transform: translate(50%);
+
+}
+
+.catalog-prod__dec-ell:nth-of-type(5) {
+    bottom: 0;
+    transform: translateX(-50%);
+
+}
+
+.catalog-prod__dec-ell:nth-of-type(6) {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+
+}
+.catalog-prod__wrap {
+    position: relative;
+}
+
 .catalog-prod__pagination {
     margin-bottom: 17px;
 }
+
 .catalog-prod__title {
     text-align: center;
     margin: 0px 0 33px 0;
