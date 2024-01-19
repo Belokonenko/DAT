@@ -1,36 +1,37 @@
-@import "./button/button.scss";
-@import "./button/_accent/button_accent.scss";
-@import "./button/_adapt/button_adapt_tabl.scss";
-@import "./button/_light/button_light.scss";
-@import "./button/_round/button_round.scss";
-@import "./button/_style/button_style_top.scss";
-@import "./button/_smooth/button_smooth.scss";
-@import "./button/button-round/button-round.scss";
-@import "./button/_theme/button_theme_dark.scss";
-@import "./button/_theme/button_theme_light.scss";
-@import "./button/_style/button_style_nav.scss";
+@import './button/button.scss';
+@import './button/_accent/button_accent.scss';
+@import './button/_adapt/button_adapt_tabl.scss';
+@import './button/_light/button_light.scss';
+@import './button/_round/button_round.scss';
+@import './button/_style/button_style_top.scss';
+@import './button/_smooth/button_smooth.scss';
+@import './button/button-round/button-round.scss';
+@import './button/_theme/button_theme_dark.scss';
+@import './button/_theme/button_theme_light.scss';
+@import './button/_style/button_style_nav.scss';
 
-@import "./transition/transition.scss";
+@import './transition/transition.scss';
 
-@import "./basket/basket.scss";
+@import './basket/basket.scss';
 
-@import "./search/search.scss";
+@import './search/search.scss';
 
-@import "./title/title.scss";
-@import "./title/_size/title_size_xl.scss";
-@import "./title/_size/title_size_l.scss";
-@import "./title/_leaf-l/title_leaf-l.scss";
-@import "./title/_leaf-r/title_leaf-r.scss";
+@import './title/title.scss';
+@import './title/_size/title_size_xl.scss';
+@import './title/_size/title_size_l.scss';
+@import './title/_leaf-l/title_leaf-l.scss';
+@import './title/_leaf-r/title_leaf-r.scss';
 
-@import "./text/text.scss";
-@import "./text/_accent/text_accent.scss";
+@import './text/text.scss';
+@import './text/_accent/text_accent.scss';
 
+@import './card-prod/card-prod.scss';
 
-@import "./card-prod/card-prod.scss";
+@import './hero/hero.scss';
 
-@import "./hero/hero.scss";
+@import './decor-ellipse/_0/decor-ellipse_0.scss';
+@import './decor-ellipse/_1/decor-ellipse_1.scss';
 
-@import "./decor-ellipse/_0/decor-ellipse_0.scss";
-@import "./decor-ellipse/_1/decor-ellipse_1.scss";
+@import './pagination/pagination.scss';
 
-@import "./pagination/pagination.scss";
+@import './checkbox-dat/checkbox-dat.scss';

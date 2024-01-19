@@ -1,16 +1,25 @@
 .catalog-prod {
     padding-top: calc($header-min-height);
 }
-
+.catalog-prod__pagination {
+    margin-bottom: 17px;
+}
 .catalog-prod__title {
     text-align: center;
-    margin: 10px 0 0 0;
+    margin: 0px 0 33px 0;
 }
 
 .catalog-prod__counter {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     line-height: normal;
+}
+
+.sort-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
 }
 
 /* Стили для обертки .sort-by */
@@ -46,7 +55,8 @@
 .sort {
     position: relative;
     appearance: none; /* Убирает стандартный стиль браузера для select */
-    padding: 12px 60px 12px 30px;
+    padding: 10px 60px 10px 30px;
+    min-width: 250px;
     cursor: pointer;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -77,13 +87,3 @@
     line-height: normal;
 }
 
-/* Стиль при наведении на option.sort-options */
-.sort-options:hover {
-    // background-color: #f0f0f0;
-}
-
-/* Стиль для выбранного состояния option.sort-options */
-.sort-options:selected {
-    background-color: #007bff;
-    color: #fff;
-}

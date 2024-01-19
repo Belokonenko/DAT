@@ -1,7 +1,7 @@
 <main class="catalog-prod">
     <div class="wrap-catalog container">
         <!-- pagination -->
-        <ul class="list pagination container">
+        <ul class="list pagination  container catalog-prod__pagination">
             <li class="pagination__item">
                 <a class="button pagination__ref" href="index.html">home</a>
             </li>
@@ -16,7 +16,6 @@
                 >
             </li>
         </ul>
-        <!--/ pagination -->
 
         <!-- catalog title -->
         <h1
@@ -27,52 +26,42 @@
 
         <!-- block num and sort -->
 
-        <div class="wrap-num-btn-sort">
+        <div class="sort-wrap">
             <!-- show prod num -->
             <p class="catalog-prod__counter">
                 <span class="catalog-prod__counter-num">621</span> products
             </p>
-            <!-- /show prod num -->
 
-            <div class="wrap-box-sort">
-                <!-- button filter mob version -->
-                <button class="filter-btn-mob btn-dat" hidden>Filter</button>
-                <!-- button filter mob version -->
-
-                <form class="sort-by">
-                    <select  class="sort">
-                        <option  class="sort-options" value="" disabled selected>sort by</option>
-                        <option  class="sort-options" value="price-low-to-high">
-                            Price: Low to High
-                        </option>
-                        <option class="sort-options" value="price-high-to-low">
-                            Price: High to Low
-                        </option>
-                        <option class="sort-options" value="popularity">Popularity</option>
-                   
-                    </select>
-                
-                </form>
-
-
-                <hr />
-                <!-- <svg class="sort__svg" viewBox="0 0 12 12"> -->
-                <!--     <use xlink:href="./img/icon/sprite.svg#arr"></use> -->
-                <!-- </svg> -->
-
-                <!-- /sort  btn-->
-            </div>
+            <!-- button filter mob version -->
+            <button class="filter-btn-mob btn-dat" hidden>Filter</button>
+            
+            <!-- sort -->
+            <form class="sort-by">
+                <select class="sort">
+                    <option class="sort-options" value="" disabled selected>
+                        sort by
+                    </option>
+                    <option class="sort-options" value="price-low-to-high">
+                        Price: Low to High
+                    </option>
+                    <option class="sort-options" value="price-high-to-low">
+                        Price: High to Low
+                    </option>
+                    <option class="sort-options" value="popularity">
+                        Popularity
+                    </option>
+                </select>
+            </form>
         </div>
-        <!-- /block num and sort -->
 
         <!-- catalog-prod-2 -->
         <div class="wrap-fliter-grid">
+            
             <!-- filters -->
             <section class="wrap-categories-filter">
-                <!--tab categories -->
 
+                <!--tab categories -->
                 <table class="categories">
-                    <!--tab strings -->
                     <tr>
                         <td>Herbicides</td>
                         <td>(<span>22</span>)</td>
@@ -116,9 +105,7 @@
                         <td>Retardants</td>
                         <td>(<span>0</span>)</td>
                     </tr>
-                    <!--/tab strings -->
                 </table>
-                <!-- tab categories -->
 
                 <form class="filter">
                     <button
@@ -132,7 +119,7 @@
                     <fieldset class="fieldset">
                         <legend class="visually-hidden">Manufacturer</legend>
                         <p class="filter__title-manufacturer">Manufacturer</p>
-                        <ul class="filter__manufacturer">
+                        <ul class="list filter__manufacturer">
                             @@include(
                             '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
                             { "name":"nertus", "text": "Nertus" })
@@ -164,7 +151,7 @@
                         <legend class="visually-hidden">Culture</legend>
 
                         <p class="filter__title-culture">Culture</p>
-                        <ul class="filter__culture">
+                        <ul class="list filter__culture">
                             @@include(
                             '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
                             { "name":"sunflower", "text": "Sunflower" })
@@ -251,7 +238,7 @@
                     <fieldset class="fieldset">
                         <legend class="visually-hidden">quantity</legend>
                         <p>Quantity</p>
-                        <ul>
+                        <ul class="list">
                             @@include(
                             '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
                             { "name":"1", "text": "1" })
