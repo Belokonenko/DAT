@@ -3,6 +3,87 @@
 }
 
 .catalog-prod__title {
-        text-align: center;
-        margin: 10px 0 0 0;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.catalog-prod__counter {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Стили для обертки .sort-by */
+
+.sort-by {
+    position: relative;
+    display: inline-flex;
+    background-color: transparent;
+
+    /* Стили для псевдоэлемента ::before */
+    &::after {
+        content: '';
+        position: absolute;
+        right: 43px;
+        top: 50%;
+        transform:translateY(-50%) ;
+        width: 1px;
+        height: 28px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    /* Стили для псевдоэлемента ::before */
+    &::before {
+        content: url(../../../images/arr-select-grey.svg);
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform:translateY(-50%) ;
+    }
+}
+
+/* Стили для select.sort */
+.sort {
+    position: relative;
+    appearance: none; /* Убирает стандартный стиль браузера для select */
+    padding: 12px 60px 12px 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    color: #484848;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: transparent;
+
+    &:focus {
+        outline: 1px solid $color-main;
+    }
+    &:hover {
+        outline: 1px solid $color-main;
+    }
+}
+
+/* Стили для option.sort-options */
+.sort-options {
+    color: #484848;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Стиль при наведении на option.sort-options */
+.sort-options:hover {
+    // background-color: #f0f0f0;
+}
+
+/* Стиль для выбранного состояния option.sort-options */
+.sort-options:selected {
+    background-color: #007bff;
+    color: #fff;
 }

@@ -29,8 +29,8 @@
 
         <div class="wrap-num-btn-sort">
             <!-- show prod num -->
-            <p class="counter-prod">
-                <span class="counter-prod__num">621</span> products are shown
+            <p class="catalog-prod__counter">
+                <span class="catalog-prod__counter-num">621</span> products
             </p>
             <!-- /show prod num -->
 
@@ -39,21 +39,21 @@
                 <button class="filter-btn-mob btn-dat" hidden>Filter</button>
                 <!-- button filter mob version -->
 
-                <!-- sort btn -->
-                <div class="sort-by">
-                    <label for="sort-options">Sort by:</label>
-                    <select id="sort-options">
-                        <option value="default">Default</option>
-                        <option value="price-low-to-high">
+                <form class="sort-by">
+                    <select  class="sort">
+                        <option  class="sort-options" value="" disabled selected>sort by</option>
+                        <option  class="sort-options" value="price-low-to-high">
                             Price: Low to High
                         </option>
-                        <option value="price-high-to-low">
+                        <option class="sort-options" value="price-high-to-low">
                             Price: High to Low
                         </option>
-                        <option value="popularity">Popularity</option>
-                        <!-- Другие опции для сортировки -->
+                        <option class="sort-options" value="popularity">Popularity</option>
+                   
                     </select>
-                </div>
+                
+                </form>
+
 
                 <hr />
                 <!-- <svg class="sort__svg" viewBox="0 0 12 12"> -->
