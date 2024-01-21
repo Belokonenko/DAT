@@ -48,6 +48,7 @@
     transform: rotate(180deg);
 }
 
+// drop-menu
 
 .drop-menu {
     position: absolute;
@@ -65,6 +66,11 @@
 .nav__btn-menu:hover  .drop-menu {
     height: calc($top-min-height * 3);
 }
+
+.nav__btn-menu:focus-within .drop-menu {
+    height: calc($top-min-height * 3);
+}
+
 
 // ---  adaptive ---
 
