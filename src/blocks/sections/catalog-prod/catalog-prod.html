@@ -27,13 +27,14 @@
         </ul>
 
         <!-- catalog title -->
+
         <h1
             class="title title_leaf-l title_size_l title_leaf-r catalog-prod__title"
         >
             Plant protection
         </h1>
 
-        <!-- block num and sort -->
+        <!-- block num, button filter and sort -->
 
         <div class="sort-wrap">
             <!-- show prod num -->
@@ -64,102 +65,58 @@
             </form>
         </div>
 
-        <!-- catalog-prod-2 -->
-        <div class="wrap-fliter-grid">
-            <!-- filters -->
-            <section class="wrap-categories-filter">
-                <!--tab categories -->
+        <!-- filter panel and block cards products -->
+        <div class="fliter-cards__wrap">
+            <!-- filter panel -->
+            <div class="filter__wrap">
+                <!--categories table -->
                 <table class="categories">
                     <tr>
                         <td>Herbicides</td>
-                        <td>
-                            (
-                            <span>22</span>
-                            )
-                        </td>
+                        <td>(33)</td>
                     </tr>
                     <tr>
                         <td>Fungicides</td>
-                        <td>
-                            (
-                            <span>7</span>
-                            )
-                        </td>
+                        <td>(33)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Fungicides</td>
-                        <td>
-                            (
-                            <span>1</span>
-                            )
-                        </td>
+                        <td>(37)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Insecticides</td>
-                        <td>
-                            (
-                            <span>111</span>
-                            )
-                        </td>
+                        <td>(33)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Desiccants</td>
-                        <td>
-                            (
-                            <span>10</span>
-                            )
-                        </td>
+                        <td>(32)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Stain removers</td>
-                        <td>
-                            (
-                            <span>111</span>
-                            )
-                        </td>
+                        <td>(73)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Adjuvants</td>
-                        <td>
-                            (
-                            <span>0</span>
-                            )
-                        </td>
+                        <td>(33)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Rodenticides</td>
-                        <td>
-                            (
-                            <span>333</span>
-                            )
-                        </td>
+                        <td>(13)</td>
                     </tr>
 
-                    <tr class="categories__line">
+                    <tr>
                         <td>Retardants</td>
-                        <td>
-                            (
-                            <span>0</span>
-                            )
-                        </td>
+                        <td>(233)</td>
                     </tr>
                 </table>
 
                 <form class="filter">
-                    <button
-                        type="button"
-                        class="filter__btn"
-                        aria-hidden="true"
-                    >
-                        Filter
-                    </button>
-
                     <fieldset class="fieldset">
                         <legend class="visually-hidden">Manufacturer</legend>
                         <p class="filter__title-manufacturer">Manufacturer</p>
@@ -195,6 +152,7 @@
                         <legend class="visually-hidden">Culture</legend>
 
                         <p class="filter__title-culture">Culture</p>
+
                         <ul class="list filter__culture">
                             @@include(
                             '../../extansion.blocks/checkbox-dat/checkbox-dat.html',
@@ -305,12 +263,13 @@
                         </ul>
                     </fieldset>
                 </form>
-            </section>
-            <!-- wrap categories and  filters -->
+            </div>
 
-            <section class="catalog-prod">
+            <!-- block cards products -->
+            <section class="cards-prod__wrap">
+                <h2 class="visually-hidden">List product</h2>
                 <!-- list card product -->
-                <ul class="list catalog-prod__list">
+                <ul class="list cards-prod__list">
                     @@for (var i = 0; i < 15; i++) {
                     <li>
                         @@include('../../extansion.blocks/card-prod/card-prod.html',
@@ -321,45 +280,44 @@
 
                     }
                 </ul>
-                <!-- /list card product -->
 
                 <!-- pagination-page -->
                 <!-- @@include('../../../lib/extansion/pagination/pagination-page/pagination-page.html') -->
-                <!-- /pagination-page -->
             </section>
         </div>
         <!-- / catalog-prod-2  --->
     </div>
+
     <!-- /wrap-catalog -->
 
-    <!-- <section class="description desc__catalog-prod"> -->
-    <!--     <div class="description__text-wrap container"> -->
-    <!--         <h1 class="title description__title">Plant protection</h1> -->
+    <section class="description desc__catalog-prod">
+        <div class="description__text-wrap container">
+            <h2 class="title description__title">Plant protection</h2>
 
-    <!--         <p> -->
-    <!--             Means of plant protection are divided into four main types: -->
-    <!--             mechanical, chemical, biological and agrotechnical. However, the -->
-    <!--             most rational thing is their simultaneous, correct combination. -->
-    <!--             The most common method is chemical. There are thousands of -->
-    <!--             different types of chemical protection products. But they should -->
-    <!--             not be confused, let alone combined with chemical fertilizers. -->
-    <!--             The methods of their influence on plants are completely -->
-    <!--             opposite. -->
-    <!--         </p> -->
+            <p>
+                Means of plant protection are divided into four main types:
+                mechanical, chemical, biological and agrotechnical. However, the
+                most rational thing is their simultaneous, correct combination.
+                The most common method is chemical. There are thousands of
+                different types of chemical protection products. But they should
+                not be confused, let alone combined with chemical fertilizers.
+                The methods of their influence on plants are completely
+                opposite.
+            </p>
 
-    <!--         <p> -->
-    <!--             It is necessary to know and distinguish chemical means of plant -->
-    <!--             protection. After all, these drugs have a strictly defined -->
-    <!--             object of influence (the causative agent of the disease, insect -->
-    <!--             pests, a species or family of weeds). -->
-    <!--         </p> -->
+            <p>
+                It is necessary to know and distinguish chemical means of plant
+                protection. After all, these drugs have a strictly defined
+                object of influence (the causative agent of the disease, insect
+                pests, a species or family of weeds).
+            </p>
 
-    <!--         <p> -->
-    <!--             Poisonous chemicals do not tolerate negligence. This is the type -->
-    <!--             of drug that is not enough to simply dilute in water and spray -->
-    <!--             plants with it. If pesticides are used incorrectly, they can -->
-    <!--             harm you, the beneficial insects, and the crop. -->
-    <!--         </p> -->
-    <!--     </div> -->
-    <!-- </section> -->
+            <p>
+                Poisonous chemicals do not tolerate negligence. This is the type
+                of drug that is not enough to simply dilute in water and spray
+                plants with it. If pesticides are used incorrectly, they can
+                harm you, the beneficial insects, and the crop.
+            </p>
+        </div>
+    </section>
 </main>
