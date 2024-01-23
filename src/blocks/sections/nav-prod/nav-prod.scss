@@ -41,19 +41,19 @@
     fill: currentColor;
 }
 
-.nav-prod__btn:focus {
+.nav-prod__btn:focus-visible {
     background-color: $color-acent;
     border-color: $color-acent;
     color: #fff;
 }
 
-.nav-prod__btn:focus .nav-prod__svg {
+.nav-prod__btn:focus-visible .nav-prod__svg {
     fill: currentColor;
 }
 
 .nav-prod__btn:active {
-    background-color: $color-acent;
-    border-color: $color-acent;
+    background-color: $color-accent-dark;
+    border-color: $color-accent-dark;
     color: #fff;
 }
 

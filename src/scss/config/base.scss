@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     user-select: none;
+    // border: 1px solid red;
 }
 
 .page-html {
@@ -31,6 +32,7 @@
     height: auto;
     pointer-events: none;
 }
+
 img {
     pointer-events: none;
 }
